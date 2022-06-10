@@ -22,7 +22,7 @@ const pwaOptions: Partial<VitePWAOptions> = {
   manifest,
   workbox: {
     // Warning: DON'T add sw.js and workbox-xxxx.js
-    globPatterns: ['*.html', 'manifest.webmanifest', 'assets/*', '*.{svg,png,jpg,woff,eot,ttf}'],
+    globPatterns: ['manifest.webmanifest', 'assets/*', '*.{svg,png,jpg,woff,eot,ttf}'],
     // We need to increase the workbox size, all assets with size > 2MIB will
     // be excluded and then will not work on offline when used
     maximumFileSizeToCacheInBytes: 5000000,
@@ -64,7 +64,7 @@ export default defineConfig({
     {
       ...mdx({
         jsx: true,
-        jsxImportSource: 'solid-js',
+        jsxImportSource: 'solid-jsx',
         providerImportSource: 'solid-mdx',
         remarkPlugins: [remarkGfm],
       }),
@@ -94,4 +94,8 @@ export default defineConfig({
     //  },
     //},
   },
+  resolve: {
+    conditions: ['solid'],
+    dedupe: ["solid-js"]
+  }
 });
