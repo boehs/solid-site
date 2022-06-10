@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html style="scroll-behavior: smooth">
-  <head>
+export const Meta = () => (
+  <>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png" />
@@ -31,12 +30,5 @@
       name="description"
       content="A declarative, efficient and flexible JavaScript library for building user interfaces."
     />
-    <link rel="sitemap" href="sitemap.xml" type="application/xml" />
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" />
-    <script src="/src/main.tsx" type="module"></script>
-  </head>
-  <body class="font-display bg-white text-black dark:bg-solid-darkbg dark:text-white">
-    <div id="app"></div>
-    <footer id="footer"></footer>
-  </body>
-</html>
+  </>
+);
