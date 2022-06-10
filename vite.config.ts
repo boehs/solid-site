@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
-import solid from 'vite-plugin-solid';
-import { VitePWA, Options as VitePWAOptions } from 'vite-plugin-pwa';
+import solid from "solid-start";
+import { Options as VitePWAOptions } from 'vite-plugin-pwa';
 import manifest from './src/assets/manifest.json';
 import mdx from '@mdx-js/rollup';
 import remarkGfm from 'remark-gfm';
@@ -80,18 +80,18 @@ export default defineConfig({
   build: {
     polyfillDynamicImport: false,
     target: 'esnext',
-    terserOptions: {
-      compress: {
-        unsafe: true,
-        unsafe_arrows: true,
-        unsafe_Function: true,
-        unsafe_math: true,
-        unsafe_symbols: true,
-        unsafe_methods: true,
-        unsafe_proto: true,
-        unsafe_regexp: true,
-        passes: 3,
-      },
-    },
+    //terserOptions: {
+    //  compress: {
+    //    unsafe: true,
+    //    unsafe_arrows: true,
+    //    unsafe_Function: true,
+    //    unsafe_math: true,
+    //    unsafe_symbols: true,
+    //    unsafe_methods: true,
+    //    unsafe_proto: true,
+    //    unsafe_regexp: true,
+    //    passes: 3,
+    //  },
+    //},
   },
 });

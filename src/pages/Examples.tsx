@@ -5,7 +5,7 @@ import { ExamplesDataRoute } from './Examples.data';
 
 import { compiler, formatter } from '../components/setupRepl';
 import { useI18n } from '@solid-primitives/i18n';
-import { useRouteReadyState } from '../utils/routeReadyState';
+import { useRouteReadyState } from '../lib/routeReadyState';
 import { useAppContext } from '../AppContext';
 
 const Examples: Component = () => {

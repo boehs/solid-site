@@ -12,9 +12,9 @@ import { createCountdown } from '@solid-primitives/date';
 import { createIntersectionObserver } from '@solid-primitives/intersection-observer';
 import { debounce } from '@solid-primitives/scheduled';
 import Dismiss from 'solid-dismiss';
-import { useRouteReadyState } from '../utils/routeReadyState';
-import { parseKeyword } from '../utils/parseKeyword';
-import { rememberSearch } from '../utils/rememberSearch';
+import { useRouteReadyState } from '../lib/routeReadyState';
+import { parseKeyword } from '../lib/parseKeyword';
+import { rememberSearch } from '../lib/rememberSearch';
 
 const AResource: Component<Resource> = (props) => {
   const [t] = useI18n();

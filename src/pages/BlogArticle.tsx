@@ -1,7 +1,7 @@
 import { Component, Show, createMemo, PropsWithChildren } from 'solid-js';
 import { useI18n } from '@solid-primitives/i18n';
 import { useRouteData, NavLink } from 'solid-app-router';
-import { useRouteReadyState } from '../utils/routeReadyState';
+import { useRouteReadyState } from '../lib/routeReadyState';
 import Footer from '../components/Footer';
 import { useAppContext } from '../AppContext';
 import { ListenNotesEpisode, YouTube, Tweet, Twitch } from 'solid-social';

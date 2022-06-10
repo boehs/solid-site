@@ -22,7 +22,7 @@ import pragmatic from '../assets/icons/pragmatic.svg';
 import productive from '../assets/icons/productive.svg';
 import Footer from '../components/Footer';
 import Benchmarks, { GraphData } from '../components/Benchmarks';
-import { useRouteReadyState } from '../utils/routeReadyState';
+import { useRouteReadyState } from '../lib/routeReadyState';
 
 const Repl = lazy(() => import('../components/ReplTab'));
 

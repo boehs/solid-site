@@ -1,13 +1,11 @@
 import { Suspense } from 'solid-js';
-import { useRoutes, Router } from 'solid-app-router';
-import { routes } from './routes';
+import { Links, Routes, Scripts } from "solid-start/root";
 import Header from './components/Header';
 import { Meta } from './components/Root'
 import { AppContextProvider } from './AppContext';
-import { preventSmoothScrollOnTabbing } from './utils';
+import { preventSmoothScrollOnTabbing } from './lib';
 
 export const App = () => {
-  const Routes = useRoutes(routes);
 
   preventSmoothScrollOnTabbing();
 
@@ -21,7 +19,6 @@ export const App = () => {
       <body class="font-display bg-white text-black dark:bg-solid-darkbg dark:text-white">
         <div id="app">
           <main class="min-h-screen">
-            <Router>
               <AppContextProvider>
                 <Header />
                 {/* two div wrappers to make page animation work and performant */}
@@ -35,7 +32,6 @@ export const App = () => {
                   </div>
                 </div>
               </AppContextProvider>
-            </Router>
           </main>
         </div>
         <footer id="footer"></footer>

@@ -22,8 +22,8 @@ import ukraine from '../assets/for-ukraine.png';
 import ScrollShadow from './ScrollShadow/ScrollShadow';
 import Social from './Social';
 import { useAppContext } from '../AppContext';
-import { reflow } from '../utils';
-import { routeReadyState, page, setRouteReadyState } from '../utils/routeReadyState';
+import { reflow } from '../lib';
+import { routeReadyState, page, setRouteReadyState } from '../lib/routeReadyState';
 import PageLoadingBar from './LoadingBar/PageLoadingBar';
 
 const langs = {

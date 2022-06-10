@@ -12,8 +12,8 @@ import {
   ResourceType,
   ResourceTypeIcons,
 } from './Resources/Ecosystem';
-import { parseKeyword } from '../utils/parseKeyword';
-import { rememberSearch } from '../utils/rememberSearch';
+import { parseKeyword } from '../lib/parseKeyword';
+import { rememberSearch } from '../lib/rememberSearch';
 import SideContent from '../components/layout/SideContent';
 import { Icon } from 'solid-heroicons';
 import { createCountdown } from '@solid-primitives/date';

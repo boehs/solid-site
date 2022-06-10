@@ -17,9 +17,9 @@ import logo from '../assets/logo.svg';
 import wordmark from '../assets/wordmark.svg';
 import { chevronRight, play } from 'solid-heroicons/outline';
 import { Icon } from 'solid-heroicons';
-import { reflow } from '../utils';
+import { reflow } from '../lib';
 import PageLoadingBar from './LoadingBar/PageLoadingBar';
-import { routeReadyState, page } from '../utils/routeReadyState';
+import { routeReadyState, page } from '../lib/routeReadyState';
 
 const Header: ParentComponent<{ title?: string }> = () => {
   const [t] = useI18n();
